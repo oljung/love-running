@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
 }
 
-body{
+body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
@@ -14,7 +14,7 @@ body{
 
 /* Logo and headings */
 
-h1, h2{
+h1, h2 {
     font-family: Owsald, sans-serif;
     color: #252525;
     letter-spacing: 4px;
@@ -28,39 +28,39 @@ h1, h2{
 }
 
 /* Navigation links */
-#menu{
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
     float: right;
 
 }
 
-#menu, #logo{
+#menu, #logo {
     line-height: 75px;
 }
 
-#menu li{
+#menu li {
     list-style-type: none;
     margin-right: 30px;
     display: inline;
 }
 
-#menu a{
+#menu a {
     text-decoration: none;
     color: inherit;
 }
 
-#menu a:hover{
+#menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
 
-.active{
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
 /* Hero image and cover text */
 
-#hero-outer{
+#hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
@@ -68,11 +68,11 @@ h1, h2{
     position: relative;
 }
 
-#cover-text, #covertext h2{
+#cover-text, #covertext h2 {
     color: #fff;
 }
 
-#cover-text{
+#cover-text {
     font-size: 130%;
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
@@ -91,7 +91,7 @@ h1, h2{
     position: absolute;
 }
 
-#hero-image{
+#hero-image {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image-love-running.webp) no-repeat center center;
@@ -103,36 +103,49 @@ h1, h2{
 }
 
 /* Creates a zoom-like effect for the hero image */
-@keyframes hero-zoom{
-    from{
+@keyframes hero-zoom {
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.1);
     }
 }
 
 /* Club ethos */
-#club-ethos{
+#club-ethos {
     height: 600px;
 }
 
-#left-about{
+#left-about {
     width: 33%;
     padding-top: 30px;
     float: left;
-    background-color: blue;
 }
 
-#right-about{
+#right-about {
     width: 33%;
     padding-top: 30px;
     float: right;
     background-color: silver;
 }
 
-#center-about{
+#center-about {
     width: 33%;
     margin: 0 auto;
     background-color: green;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
 }
